@@ -1,0 +1,95 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header (navigation bar) */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style-type: none;
+  display: flex; /* Display the list items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  background-color: #333; /* Optional: Set background color for the entire menu */
+}
+
+nav li {
+  margin-right: 1rem; /* Add spacing between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem; /* Add padding around the links */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: #111; /* Darken the background on hover */
+}
+
+/* Optional: Add an "active" class for the current page link */
+nav .active {
+  background-color: #04AA6D;
+}
+
+/* Modern and minimalistic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Optional: Add animation effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
